@@ -8,9 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.ButterKnife;
+
 public abstract class Fragment extends android.support.v4.app.Fragment {
 
     protected View mRoot;
+    protected Unbinder
 
     @Override
     public void onAttach(Context context) {
@@ -65,7 +68,7 @@ public abstract class Fragment extends android.support.v4.app.Fragment {
      * 初始化控件
      */
     protected void initWidget(View root) {
-
+        ButterKnife.bind(this, root);
     }
 
     /**
