@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.List;
 
+import butterknife.ButterKnife;
+
 public abstract class Activity extends AppCompatActivity {
 
     @Override
@@ -53,7 +55,7 @@ public abstract class Activity extends AppCompatActivity {
      * 初始化控件
      */
     protected void initWidget() {
-
+        ButterKnife.bind(this);
     }
 
     /**
