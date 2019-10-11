@@ -4,13 +4,16 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.0'
         
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
+        classpath "com.jakewharton:butterknife-gradle-plugin:9.0.0-rc2"
+
     }
 }
 
@@ -31,5 +34,5 @@ ext {
     versionName = '1.0.0';
 
     supportVersion = '28.0.0'
-    butterknifeVersion = '8.5.0'
+    butterknifeVersion = '9.0.0-rc2'
 }
