@@ -72,7 +72,7 @@ public abstract class Fragment extends android.support.v4.app.Fragment {
      * 初始化控件
      */
     protected void initWidget(View root) {
-        ButterKnife.bind(this, root);
+        mRootUnBinder =  ButterKnife.bind(this, root);
     }
 
     /**
