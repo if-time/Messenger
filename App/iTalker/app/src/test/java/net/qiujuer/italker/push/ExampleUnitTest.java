@@ -1,4 +1,4 @@
-package net.qiujuer.web.italker.push;
+package net.qiujuer.italker.push;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package net.qiujuer.web.italker.common;
+package net.qiujuer.italker.common;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("net.qiujuer.web.italker.common.test", appContext.getPackageName());
+        assertEquals("net.qiujuer.italker.common.test", appContext.getPackageName());
     }
 }

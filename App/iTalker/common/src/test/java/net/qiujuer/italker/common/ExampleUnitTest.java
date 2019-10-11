@@ -1,4 +1,4 @@
-package net.qiujuer.web.italker.common;
+package net.qiujuer.italker.common;
 
 import org.junit.Test;
 

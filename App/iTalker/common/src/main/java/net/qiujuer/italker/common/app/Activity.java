@@ -1,4 +1,4 @@
-package net.qiujuer.web.italker.common.app;
+package net.qiujuer.italker.common.app;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,9 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 
+/**
+ * @author dong
+ */
 public abstract class Activity extends AppCompatActivity {
 
     @Override
@@ -79,9 +82,9 @@ public abstract class Activity extends AppCompatActivity {
         if (fragments != null && fragments.size() > 0) {
             for (Fragment fragment : fragments) {
                 // 判断是否为我们能够处理的Fragment类型
-                if (fragment instanceof net.qiujuer.web.italker.common.app.Fragment) {
+                if (fragment instanceof net.qiujuer.italker.common.app.Fragment) {
                     // 判断是否拦截了返回按钮
-                    if (((net.qiujuer.web.italker.common.app.Fragment) fragment).onBackPressed()) {
+                    if (((net.qiujuer.italker.common.app.Fragment) fragment).onBackPressed()) {
                         // 如果有直接Return
                         return;
                     }

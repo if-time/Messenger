@@ -1,4 +1,4 @@
-package net.qiujuer.web.italker.common.app;
+package net.qiujuer.italker.common.app;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,11 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
+/**
+ * @author dong
+ */
 public abstract class Fragment extends android.support.v4.app.Fragment {
 
     protected View mRoot;
-    protected Unbinder
+    protected Unbinder mRootUnBinder;
 
     @Override
     public void onAttach(Context context) {

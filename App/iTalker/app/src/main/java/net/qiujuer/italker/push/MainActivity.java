@@ -1,9 +1,9 @@
-package net.qiujuer.web.italker.push;
+package net.qiujuer.italker.push;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import net.qiujuer.web.italker.common.Common;
+import net.qiujuer.italker.common.Common;
 
 public class MainActivity extends AppCompatActivity {
 
