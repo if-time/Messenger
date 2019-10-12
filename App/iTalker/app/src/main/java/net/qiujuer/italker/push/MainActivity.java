@@ -6,6 +6,9 @@ import net.qiujuer.italker.common.app.Activity;
 
 import butterknife.BindView;
 
+/**
+ * @author dong
+ */
 public class MainActivity extends Activity {
     @BindView(R.id.txt_test)
     TextView textView;
