@@ -1,7 +1,10 @@
 package net.qiujuer.italker.push;
 
+import android.Manifest;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +21,7 @@ import net.qiujuer.genius.ui.Ui;
 import net.qiujuer.genius.ui.widget.FloatActionButton;
 import net.qiujuer.italker.common.app.Activity;
 import net.qiujuer.italker.common.widget.PortraitView;
+import net.qiujuer.italker.push.activities.AccountActivity;
 import net.qiujuer.italker.push.frags.main.ActiveFragment;
 import net.qiujuer.italker.push.frags.main.ContactFragment;
 import net.qiujuer.italker.push.frags.main.GroupFragment;
@@ -94,7 +98,6 @@ public class MainActivity extends Activity implements BottomNavigationView.OnNav
         menu.performIdentifierAction(R.id.action_home, 0);
     }
 
-
     @OnClick(R.id.im_search)
     void onSearchMenuClick() {
 
@@ -102,7 +105,7 @@ public class MainActivity extends Activity implements BottomNavigationView.OnNav
 
     @OnClick(R.id.btn_action)
     void onActionClick() {
-
+        AccountActivity.show(this);
     }
 
     /**
